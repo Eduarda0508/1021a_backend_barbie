@@ -1,12 +1,12 @@
-import {describe, test,expect} from 'vitest'
+import {describe,test,expect} from 'vitest'
 import BancoEmMemoria from './banco-em-memoria'
 describe("Banco em memória",()=>{
     test("Deve salvar no banco em memória",()=>{
-        const input = {
+        const input= {
             id:1,
-            titulo: "test",
-            descricao: "test",
-            foto: "test",
+            titulo:"test",
+            descricao:"test",
+            foto:"test",
         }
         const bancoEmMemoria = new BancoEmMemoria();
         const result = bancoEmMemoria.salvar(input)
