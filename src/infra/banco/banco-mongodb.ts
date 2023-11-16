@@ -31,7 +31,7 @@ export default class BancoMongoDB implements FilmeRepositorioInterface{
             const result = await filmeModelo.save()
             return !!result
         }catch(erro){
-            console.log(erro)
+            //console.log(erro)
             return false
         }
         
